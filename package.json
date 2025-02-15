@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@azure/service-bus": "^7.9.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "kafkajs": "^2.2.4",
+    "nodemailer": "^6.10.0"
+  }
+}

@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  notification-procesor:
+    build: .
+    image: ajamil95/notification-procesor:0.1
+    container_name: notification-procesor
+    environment:
+      - MAIL_HOST=YourMailHost
+      - MAIL_PORT=YourMailPort
+      - MAIL_USER=
+      - MAIL_PASSWORD=
+      - SERVICE_BUS_CONNECTION_STRING=YourServiceBusConnectionString
+      - SERVICE_BUS_QUEUE_NAME=YourQueueName
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    external: true
